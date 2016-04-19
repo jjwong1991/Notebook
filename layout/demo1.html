@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>自适应布局</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				text-align: center;
+				color: #fff;
+				font: 32px/1.5 tahoma,arial,"Hiragino Sans GB","宋体",sans-serif;
+			}
+			p {
+				margin: 0;
+			}
+			.clearfix:after{
+				content: ""; 
+				display: block; 
+				height: 0; 
+				clear: both; 
+				visibility: hidden;  
+			}
+			.clearfix {
+				/* 触发 hasLayout */ 
+				zoom: 1; 
+			}
+			.bg-red {
+				background: #ca4040;
+			}
+			.bg-orange {
+				background: #ff8604;
+			}
+			.bg-blue {
+				background: #4390ee;
+			}
+			.bg-gray {
+				background: #ccc;
+			}
+
+			/*方法1*/
+			.container {
+				margin-left: 190px;
+				background: #ccc;
+			}
+			.layout-left {
+				float: left;
+				width: 190px;
+				height: 400px;
+				margin-left: -190px;
+				background: #ca4040;
+			}
+			.layout-right {
+				height: 300px;
+				background: #4390ee;
+			}
+
+			/*方法2*/
+			/*.container {
+				background: #ccc;
+			}
+			.layout-left {
+				background: #ca4040;
+				float: left;
+				width: 190px;
+				height: 400px;
+				background: #ca4040;
+			}
+			.layout-right {
+				height: 300px;
+				margin-left: 190px;
+				background: #4390ee;
+			}*/
+		</style>
+	</head>
+<body>
+<div class="container clearfix">
+	<div class="layout-left">
+		<p>LEFT</p>
+		<p>width:190px</p>
+	</div>
+	<div class="layout-right">
+		<p>RIGHT</p>
+	</div>
+</div>
+</body>
+</html>
