@@ -43,4 +43,4 @@ var mySwiper = new Swiper('.swiper-container',{
 
 ---
 #### Demo
-[slidesPerView.html](Notebook/slidesPerView.html)
+[slidesPerView.html](slidesPerView.html)
