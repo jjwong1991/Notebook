@@ -42,4 +42,4 @@ var mySwiper = new Swiper('.swiper-container',{
 * 不足一屏的slide-3将滚动半屏(slide-3的高度)
 ---
 
-[Demo](Notebook/slidesPerView.html)
+#### [Demo](Notebook/slidesPerView.html)
