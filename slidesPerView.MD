@@ -18,13 +18,14 @@ var mySwiper = new Swiper('.swiper-container',{
 });
 ```
 * 由于高度或宽度不再相同，swiper无法通过总高度得出参与loop的slide个数，所以loop模式下还需要设置另外一个参数loopedSlides，以告知swiper当前loop由多少slide构成。
-##设定.swiper-container标签的高度
+
+## 设定.swiper-container标签的高度
 ```
 .swiper-container {
 	height: 600px;
 }
 ```
-##设定每个滑动元素的高度
+## 设定每个滑动元素的高度
 ```
 .slide-1 {
 	height: 1200px;
@@ -39,5 +40,6 @@ var mySwiper = new Swiper('.swiper-container',{
 * 大于一屏的slide-1将被分为多屏滚动
 * 一屏高度的slide-2将正常滚动
 * 不足一屏的slide-3将滚动半屏(slide-3的高度)
-* 
-#### [Demo - slidesPerView.html](Notebook/slidesPerView.html)
+
+#### Demo
+[slidesPerView.html](Notebook/slidesPerView.html)
