@@ -20,30 +20,40 @@
 ```
 .container {
 	margin-left: 190px;
+	background: #ccc;	//cantainer背景设为灰色便于观察高度
 }
 .layout-left {
 	float: left;
 	width: 190px;
 	height: 400px;
 	margin-left: -190px;
+	background: #ca4040;
 }
 .layout-right {
 	height: 300px;
+	background: #4390ee;
 }
 ```
 ###### 方法2
 ```
-/*.layout-left {
+.container {
+	background: #ccc;	//cantainer背景设为灰色便于观察高度
+}
+.layout-left {
+	background: #ca4040;
 	float: left;
 	width: 190px;
 	height: 400px;
+	background: #ca4040;
 }
 .layout-right {
 	height: 300px;
 	margin-left: 190px;
-}*/
+	background: #4390ee;
+}
 ```
-#### [demo - columns2.html](columns2.html)
+不要忘记给container元素清除浮动。
+#### [demo - demo1.html](demo1.html)
 ---
 ## 左右定宽，中间自适应宽度布局
-#### [demo - columns3.html](columns3.html)
+#### [demo - demo2.html](demo2.html)
