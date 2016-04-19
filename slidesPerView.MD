@@ -36,11 +36,7 @@ var mySwiper = new Swiper('.swiper-container',{
 	height: 300px;
 }
 ```
----
 * 大于一屏的slide-1将被分为多屏滚动
 * 一屏高度的slide-2将正常滚动
 * 不足一屏的slide-3将滚动半屏(slide-3的高度)
-* 
----
-
 #### [Demo - slidesPerView.html](Notebook/slidesPerView.html)
